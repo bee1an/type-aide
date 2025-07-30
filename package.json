@@ -1,0 +1,14 @@
+{
+  "name": "type-aide",
+  "version": "0.0.0",
+  "description": "typescript type aide",
+  "main": "index.js",
+  "type": "module",
+  "types": "index.d.ts",
+  "keywords": [
+    "typescript"
+  ],
+  "author": "bee1an",
+  "license": "MIT",
+  "packageManager": "pnpm@10.11.0"
+}
