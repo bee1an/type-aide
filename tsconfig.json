@@ -8,11 +8,13 @@
     "exactOptionalPropertyTypes": true,
     "noUncheckedIndexedAccess": true,
     "declaration": true,
-    "declarationMap": true,
+    "declarationMap": false,
     "sourceMap": true,
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
     "noUncheckedSideEffectImports": true,
     "skipLibCheck": true
-  }
+  },
+
+  "exclude": ["tsdown.config.ts"]
 }
