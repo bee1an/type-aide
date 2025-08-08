@@ -1,14 +1,35 @@
 {
   "name": "type-aide",
-  "version": "0.0.0",
-  "description": "typescript type aide",
-  "main": "index.js",
   "type": "module",
-  "types": "index.d.ts",
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.11.0",
+  "description": "typescript type aide",
+  "author": "bee1an",
+  "license": "MIT",
   "keywords": [
     "typescript"
   ],
-  "author": "bee1an",
-  "license": "MIT",
-  "packageManager": "pnpm@10.11.0"
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsdown src/index.d.ts",
+    "lintf": "eslint --fix .",
+    "prepare": "husky",
+    "commitlint": "commitlint --edit"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^5.2.0",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "cz-git": "^1.12.0",
+    "eslint": "^9.32.0",
+    "eslint-plugin-format": "^1.0.1",
+    "husky": "^9.1.7",
+    "lint-staged": "16.1.4",
+    "tsdown": "^0.13.3",
+    "typescript": "^5.9.2"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
 }
